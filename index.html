@@ -1,0 +1,577 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="/css/output.css" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="marquee grid bg-gradient-to-r from-green-950 via-[green] to-green-950">
+      <marquee behavior="scroll" direction="left" scrollamount="3">
+        <span class="text-white">Welcome to Chinedu Auto AC Repair Solution Center...</span>
+        <span class="text-white pl-[100vw]">Thank You! For Your Patronage</span>
+      </marquee>
+    </div>
+    <div class="contact flex flex-col lg:flex-row justify-between items-center bg-gray-950">
+      <div class="w-full lg:w-[90%] flex flex-col lg:flex-row justify-between items-center text-white mx-auto">
+        <div class="name text-2xl font-bold py-2">Chinedu AC</div>
+        <div class="address-conatiner flex justify-between w-full lg:w-fit gap-x-0 lg:gap-x-36 py-3 px-2 ">
+          <div class="address">
+            <p class="font-bold">Address</p>
+            <p>Gado Nasko Rd. Kubwa</p>
+          </div>
+          <div class="call-us">
+            <p class="font-bold">Call Us</p>
+            <p>0706 365 5056</p>
+          </div>
+        </div>
+        <div class=" hidden lg:block">
+          <div class="social flex gap-x-3">
+            <div><img class="size-6 cursor-pointer" src="Images/fb-black.png" alt=""></div>
+            <div><img class="size-6 cursor-pointer" src="Images/instagram-Icon-color.jpeg" alt=""></div>
+            <div><img class="size-6 cursor-pointer" src="Images/twitter-icon.png" alt=""></div>
+            <div><img class="size-6 cursor-pointer" src="Images/whatsapp-icon.jpeg" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="nav-container bg-gray-700">
+      <nav class="text-white flex justify-between items-center py-3 lg:py-0 w-[95%] mx-auto">
+        <div class="group flex justify-center items-center gap-x-24 font-medium">
+          <div class="logo cursor-pointer flex justify-center items-center font-extrabold">
+            <img class="size-9" src="Images/logo1.png" alt="">
+            <small>CAR-AC</small>
+          </div>
+
+          <div class="hidden lg:block">
+            <ul class="flex ">
+              <li class="py-3.5 px-3 bg-black"><a href="#home">Home</a></li>
+              <li class="py-3.5 px-3 hover:bg-black"><a href="#About">About</a></li>
+              <li class="py-3.5 px-3 hover:bg-black"><a href="#What-We-Do">What We Do</a></li>
+              <li class="py-3.5 px-3 hover:bg-black"><a href="#Services">Services</a></li>
+              <li class="py-3.5 px-3 hover:bg-black"><a href="#Project">Project</a></li>
+              <li class="py-3.5 px-3 hover:bg-black"><a href="#Blog">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-nav-link flex gap-x-3 justify-center items-center">
+          <div class="account hidden lg:block p-1 rounded-full size-fit bg-white"><img class="size-5"
+              src="Images/Search-Icon.png" alt=""></div>
+          <div class="account p-1 rounded-full size-fit bg-white"><img class="size-5" src="Images/User-Icon-Black.png"
+              alt="">
+          </div>
+          <div class="nav-menu-btn cursor-pointer *:pb-[.4rem] block lg:hidden">
+            <div class="w-6 border-t-[.17rem] mt-[.25rem] border-white"></div>
+            <div class="w-6 border-t-[.17rem] border-white"></div>
+            <div class="w-6 border-t-[.17rem] border-white"></div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="mobile-nav-links h-0 overflow-hidden transition-all duration-700 absolute z-50 w-full">
+        <ul class="text-white bg-gray-600 font-bold">
+          <li class="py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#home">Home</a></li>
+          <li class="py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#About">About</a></li>
+          <li class="py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#What-We-Do">What We Do</a></li>
+          <li class="py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#Services">Services</a></li>
+          <li class="py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#Project">Project</a></li>
+          <li class="py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#Blog">Blog</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+  <main class="w-full overflow-x-hidden">
+    <section id="carousel-section" class="w-[100%] bg-white pb-5">
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden  md:h-96 lg:h-[76vh]">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="Images/bg3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="...">
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="Images/bg2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="...">
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="Images/bg3.jpg" class="absolute block w-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="...">
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="Images/bg2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="...">
+          </div>
+          <!-- Item 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="Images/bg3.jpg" class="absolute block w-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="...">
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+            data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+            data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+            data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+            data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+            data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+
+    </section>
+
+
+    <section id="About" class="w-[100%] bg-white pb-5">
+      <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-x-10 lg:gap-x-20 w-[90%] justify-between">
+        <div class="image hover:scale-110 focus:scale-110 transition-all duration-700 mx-auto lg:mx-0"><img
+            src="Images/bg1.jpg" alt=""></div>
+        <div class="about-us-text *:pb-3">
+          <h2 class=" text-orange-600 pt-14 lg:pt-0 lg:text-start text-center text-xl">Welcome to Chinedu Auto AC Shop
+          </h2>
+          <p class="text-3xl text-[#5A6F84] grid place-items-center lg:place-items-start">About</p>
+          <p class="text-justify py-1">
+            Chinedu Auto AC specialise in fixing car air-condition for all models of cars. We have highly skilled
+            technicians who
+            have extensive experience in diagnosing and repairing AC systems for a wide range of car makes. Trust us
+            with your car air conditioning system, repairs, install and maintenance. Come once come all.
+          </p>
+
+          <p class="text-justify">Also we sell original air-condition spare parts. Compressor, condenser, gas,
+            evaporator etc. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eligendi ipsa reprehenderit
+            at fugit dolore soluta perferendis hic deserunt! Velit ratione voluptatem nobis deserunt fugiat alias,
+            deleniti aut exercitationem.
+          </p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing eliid illum voluptatem exercitationem. Nostrum officia
+            nemo ut, mollitia ipsam quo veniam sit ducimus.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Who-We-Are" class="w-[100%] bg-gray-50 pb-5">
+
+      <div class="who-we-are-container w-[90%] py-5 mx-auto">
+        <div>
+          <h2 class="text-2xl font-black text-center py-2">What We Do</h2>
+          <div class="w-[7rem] border-t-[0.18rem] pb-2 border-gray-950 mx-auto"></div>
+
+          <div class="Dot-container flex pb-3 gap-x-4 justify-center items-center">
+            <div class="size-2 rounded-full bg-gray-950"></div>
+            <div class="size-3 rounded-full bg-gray-950"></div>
+            <div class="size-2 rounded-full bg-gray-950"></div>
+          </div>
+        </div>
+
+
+
+
+        <div
+          class="what-we-do grid-container w-[90%] mx-auto grid place-items-center gap-x-10 lg:gap-x-36 grid-cols-2 md:grid-cols-3 gap-3 lg:gap-0 lg:grid-cols-4">
+          <div class="w-[17rem] grid place-items-center">
+            <img class="w-[11rem] lg:w-[17rem] h-[9rem] lg:h-[11rem]" src="Images/bg61.jpeg" alt="">
+            <h2 class="py-2 font-black text-center">AC Technicians</h2>
+            <p class="text-center lg:text-justify mx-5 lg:mx-0">Lorem ipsum dolor Exercitationem magni id architecto
+              harum optio asperiores excepturi doloremque uztv
+
+            </p>
+
+          </div>
+          <div class="w-[17rem] grid place-items-center">
+            <img class="w-[11rem] lg:w-[17rem] h-[9rem] lg:h-[11rem]" src="Images/bg10.jpeg" alt="">
+            <h2 class="py-2 font-black text-center">AC Workshop</h2>
+            <p class="text-center lg:text-justify mx-5 lg:mx-0">Lorem ipsum dolor Exercitationem magni id architecto
+              harum optio asperiores excepturi doloremque
+              uztv
+
+            </p>
+          </div>
+          <div class="w-[17rem] grid place-items-center">
+            <img class="w-[11rem] lg:w-[17rem] h-[9rem] lg:h-[11rem]" src="Images/AC img3.jpeg" alt="">
+            <h2 class="py-2 font-black text-center">AC Diagnosis</h2>
+            <p class="text-center lg:text-justify mx-5 lg:mx-0">Lorem ipsum dolor Exercitationem magni id architecto
+              harum optio asperiores excepturi doloremque
+              uztv
+
+            </p>
+          </div>
+          <div class="w-[17rem] grid place-items-center ">
+            <img class="w-[11rem] lg:w-[17rem] h-[9rem] lg:h-[11rem]" src="Images/AC img2.jpeg" alt="">
+            <h2 class="py-2 font-black text-center">AC Testing</h2>
+            <p class="text-center lg:text-justify mx-5 lg:mx-0">Lorem ipsum dolor Exercitationem magni id architecto
+              harum optio asperiores excepturi doloremque
+              uztv
+
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="spare-parts" class="w-[100%] bg-white pb-5">
+
+      <div class="spare-parts-container w-[90%] py-5 mx-auto">
+        <div>
+          <h2 class="text-2xl font-black text-center py-2">Other Services</h2>
+          <div class="w-[7rem] border-t-[0.18rem] pb-2 border-gray-950 mx-auto"></div>
+
+          <div class="Dot-container flex pb-3 gap-x-4 justify-center items-center">
+            <div class="size-2 rounded-full bg-gray-950"></div>
+            <div class="size-3 rounded-full bg-gray-950"></div>
+            <div class="size-2 rounded-full bg-gray-950"></div>
+          </div>
+        </div>
+
+
+
+
+        <div
+          class="Other-services w-[90%] mx-auto grid place-items-center gap-x-10 lg:gap-x-36 grid-cols-2 md:grid-cols-3 gap-3 lg:gap-0 lg:grid-cols-4">
+          <div class="w-[17rem] grid place-items-center">
+            <img class="w-[11rem] lg:w-[17rem] h-[9rem] lg:h-[11rem]" src="Images/AC img12.jpeg" alt="">
+            <h2 class="py-2 font-black text-center">AC Shop</h2>
+            <p class="text-center lg:text-justify mx-5 lg:mx-0">Lorem ipsum dolor Exercitationem magni id architecto
+              harum optio asperiores excepturi doloremque uztv
+
+            </p>
+
+          </div>
+          <div class="w-[17rem] grid place-items-center">
+            <img class="w-[11rem] lg:w-[17rem] h-[9rem] lg:h-[11rem]" src="Images/AC img19.jpeg" alt="">
+            <h2 class="py-2 font-black text-center">AC Condenser</h2>
+            <p class="text-center lg:text-justify mx-5 lg:mx-0">Lorem ipsum dolor Exercitationem magni id architecto
+              harum optio asperiores excepturi doloremque
+              uztv
+
+            </p>
+          </div>
+          <div class="w-[17rem] grid place-items-center">
+            <img class="w-[11rem] lg:w-[17rem] h-[9rem] lg:h-[11rem]" src="Images/AC img18.jpeg" alt="">
+            <h2 class="py-2 font-black text-center">AC Compressor</h2>
+            <p class="text-center lg:text-justify mx-5 lg:mx-0">Lorem ipsum dolor Exercitationem magni id architecto
+              harum optio asperiores excepturi doloremque
+              uztv
+
+            </p>
+          </div>
+          <div class="w-[17rem] grid place-items-center">
+            <img class="w-[11rem] lg:w-[17rem] h-[9rem] lg:h-[11rem]" src="Images/gas-charging-valve.jpeg" alt="">
+            <h2 class="py-2 font-black text-center">AC Gas</h2>
+            <p class="text-center lg:text-justify mx-5 lg:mx-0">Lorem ipsum dolor Exercitationem magni id architecto
+              harum optio asperiores excepturi doloremque
+              uztv
+
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience w-full bg-black pb-5">
+      <div class="grid w-full grid-cols-1 lg:grid-cols-4 place-items-center bg-black text-white *:py-5 *:text-center">
+        <div>
+          <p class="text-3xl text-orange-500">25</p>
+          <h2>Years of Experience</h2>
+
+        </div>
+        <div>
+          <p class="text-3xl text-orange-500">4000</p>
+          <h2>Project Completed</h2>
+        </div>
+        <div>
+          <p class="text-3xl text-orange-500">2321</p>
+          <h2>Happy Customers</h2>
+        </div>
+        <div>
+          <p class="text-3xl text-orange-500">30</p>
+          <h2>Award Winning</h2>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="appointment pb-5">
+      <div class="py-5">
+        <h2 class="text-2xl font-black text-center py-2">Book An Appointment</h2>
+        <div class="w-[7rem] border-t-[0.18rem] pb-2 border-gray-950 mx-auto"></div>
+
+        <div class="Dot-container flex pb-3 gap-x-4 justify-center items-center">
+          <div class="size-2 rounded-full bg-gray-950"></div>
+          <div class="size-3 rounded-full bg-gray-950"></div>
+          <div class="size-2 rounded-full bg-gray-950"></div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 w-full *:text-center">
+        <div class="bg-gray-600 pb-3">
+          <h2 class="text-white py-2 text-3xl font-black">Common AC Problems</h2>
+          <ul class="text-white list-disc text-xl text-justify pl-[17%] lg:pl-[30%] leading-normal lg:leading-10">
+            <li>Weak Airflow</li>
+            <li>Warm Air instead of Cold</li>
+            <li>Strange Noises</li>
+            <li>Foul Odour</li>
+            <li>Water Leaks inside the Car</li>
+            <li>Compressor Issues</li>
+            <li>Refrigerant Leaks</li>
+            <li>Intermittent Cooling</li>
+            <li>Frozen AC Systems</li>
+            <li>Unpleasant Chemical Smell</li>
+            <li>E.T.C...</li>
+          </ul>
+
+        </div>
+
+        <div class="form bg-orange-500 w-full">
+          <h2 class="text-3xl py-2 text-white font-black">Free Consultaion</h2>
+          <form>
+            <div class="form-group pb-5 w-[95%] mx-auto">
+              <select name="issues" id="issues" class="py-2 px-2 w-full outline-none rounded">
+                <option hidden value="">Select Services</option>
+                <option value="ac">AC Repair</option>
+                <option value="ac">Engine Repair</option>
+                <option value="ac">Body Repair</option>
+                <option value="ac">Electrical Repair</option>
+              </select>
+            </div>
+
+
+            <div class="form-group pb-5 w-[95%] mx-auto">
+              <div class="grid grid-cols-2 gap-x-3 w-full">
+                <input type="text" name="name" id="name" class="py-2 px-2 w-full outline-none rounded"
+                  placeholder="Name">
+                <input type="text" name="engineNo" id="engineNo" class="py-2 px-2 w-full outline-none rounded"
+                  placeholder="Engine No.">
+              </div>
+            </div>
+
+
+            <div class="form-group pb-5 w-[95%] mx-auto">
+              <div class="grid grid-cols-2 gap-x-3 w-full">
+                <input type="date" name="date" id="date" class="py-2 px-2 w-full outline-none rounded"
+                  placeholder="Date">
+                <input type="time" name="time" id="time" class="py-2 px-2 w-full outline-none rounded"
+                  placeholder="Time">
+              </div>
+            </div>
+
+            <div class="form-group w-[95%] mx-auto">
+              <textarea name="text" id="text" rows="7" class="w-full rounded outline-none px-2"></textarea>
+            </div>
+
+            <div class="form-group  w-[95%] mx-auto py-4">
+
+              <button class="py-2 px-2 w-full outline-none rounded bg-orange-950 text-white">Submit</button>
+
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="faq w-full bg-gray-50 pb-5">
+      <div class="faq-container w-[100%] mx-auto">
+        <div class="py-5">
+          <h2 class="text-2xl font-black text-center py-2">Frequenly Asked Questions</h2>
+          <div class="w-[7rem] border-t-[0.18rem] pb-2 border-gray-950 mx-auto"></div>
+
+          <div class="Dot-container flex pb-3 gap-x-4 justify-center items-center">
+            <div class="size-2 rounded-full bg-gray-950"></div>
+            <div class="size-3 rounded-full bg-gray-950"></div>
+            <div class="size-2 rounded-full bg-gray-950"></div>
+          </div>
+        </div>
+
+        <details class="bg-gray-200 py-3 px-3 rounded-t cursor-pointer text-gray-950">
+          <summary>Are You an AC Engineer?</summary>
+          <p class="pl-4 pt-5">Yes, and We have some technicians working with us</p>
+        </details>
+
+        <details class="bg-gray-100 py-3 px-3 cursor-pointer text-gray-950">
+          <summary>Can you handle AC Repairs for all Cars </summary>
+          <p class="pl-4 pt-5">Yes, We have successfully Completed over 4000 Car AC Repairs with different Car Makes</p>
+        </details>
+
+        <details class="bg-gray-200 py-3 px-3 cursor-pointer text-gray-950">
+          <summary>Do you refund if the work fails?</summary>
+          <p class="pl-4 pt-5">No Man is Perfect but we assure you that we have above 90% successful work</p>
+        </details>
+
+        <details class="bg-gray-100 py-3 px-3 cursor-pointer text-gray-950">
+          <summary>Do you give Guarantee after work?</summary>
+          <p class="pl-4 pt-5">Most of Our Customers don't Come back 2-3 Years after we have worked on their AC because
+            we take our time to do good work</p>
+        </details>
+
+        <details class="bg-gray-200 py-3 px-3 cursor-pointer text-gray-950">
+          <summary>What Kind of AC Gas Dou You use</summary>
+          <p class="pl-4 pt-5">There are a lot aof AC gas out there but we use the best quality gas for our AC work</p>
+        </details>
+
+        <details class="bg-gray-100 py-3 px-3 cursor-pointer text-gray-950">
+          <summary>Do You Drink or Smoke</summary>
+          <p class="pl-4 pt-5">We don't Condem Drink But we do not tolerate Drinking or Smoking at the workshop</p>
+        </details>
+
+        <details class="bg-gray-200 py-3 px-3 cursor-pointer text-gray-950">
+          <summary>Do you also do Mechanic work</summary>
+          <p class="pl-4 pt-5">No, but we have good Mechanic we recommend for our Customers</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="blog w-full pb-5">
+      <div class="py-5">
+        <h2 class="text-2xl font-black text-center py-2">Completed Projects</h2>
+        <div class="w-[7rem] border-t-[0.18rem] pb-2 border-gray-950 mx-auto"></div>
+
+        <div class="Dot-container flex pb-3 gap-x-4 justify-center items-center">
+          <div class="size-2 rounded-full bg-gray-950"></div>
+          <div class="size-3 rounded-full bg-gray-950"></div>
+          <div class="size-2 rounded-full bg-gray-950"></div>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <div
+          class="what-we-do grid-container w-[90%] mx-auto grid place-items-center gap-x-10 lg:gap-x-36 grid-cols-2 md:grid-cols-3 gap-3 lg:gap-0 lg:grid-cols-4">
+          <div class="w-[17rem] grid place-items-center">
+            <img class="w-[11rem] lg:w-[17rem] h-[9rem] lg:h-[11rem]" src="Images/AC img2.jpeg" alt="">
+            <h2 class="py-2 font-black text-center">Testing Completed Work</h2>
+
+          </div>
+          <div class="w-[17rem] grid place-items-center">
+            <img class="w-[11rem] lg:w-[17rem] h-[9rem] lg:h-[11rem]" src="Images/AC img1.jpeg" alt="">
+            <h2 class="py-2 font-black text-center">AC Testing</h2>
+
+          </div>
+          <div class="w-[17rem] grid place-items-center">
+            <img class="w-[11rem] lg:w-[17rem] h-[9rem] lg:h-[11rem]" src="Images/AC img9.jpeg" alt="">
+            <h2 class="py-2 font-black text-center"> Kudos AC is Working...</h2>
+
+          </div>
+          <div class="w-[17rem] grid place-items-center ">
+            <img class="w-[11rem] lg:w-[17rem] h-[9rem] lg:h-[11rem]" src="Images/bg1.jpeg" alt="">
+            <h2 class="py-2 font-black text-center">Customer is Leaving...</h2>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+  </main>
+
+
+  <footer class="w-full min-h-96 bg-black">
+    <div class="footer-container w-[95%] mx-auto  text-white py-5">
+      <div class="text-center pb-5">
+        <h2 class="font-black">Chinedu AC</h2>
+        <p>No.1 AC specialist...</p>
+        <p>Come let us transform your Car AC to Mortuary Stanadered.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-4 mx-auto gap-x-10 py-5">
+        <div>
+          <h2 class="font-black pb-3">Services</h2>
+          <ul class="pl-5 list-disc">
+            <li>We repair AC with Weak Airflow </li>
+            <li>We repair AC delivering Hot Airs </li>
+            <li>We repair AC with Strange Noises </li>
+            <li>We repair AC with Foul Odour </li>
+            <li>We repair AC with Water Leaks... </li>
+            <li>We repair AC with Compressor issues </li>
+            <li>We repair AC with Refrigerant Leaks </li>
+            <li>We repair AC with Intermittent Cooling </li>
+            <li>We repair AC with Frozen AC Systems </li>
+            <li>We repair AC with Unpleasant Smell </li>
+            <li>E.T.C...</li>
+          </ul>
+
+        </div>
+        <div>
+          <h2 class="font-black pb-3">Opening Hours</h2>
+          <ul class="list-disc pl-5">
+            <li>Mon 09:00 - 08:00 </li>
+            <li>Tue 09:00 - 08:00</li>
+            <li>Wed 09:00 - 08:00 </li>
+            <li>Thu 09:00 - 08:00 </li> 
+            <li>Fri 09:00 - 08:00 </li>
+            <li>Sat 09:00 - 08:00 </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-black pb-3">Contact information</h2>
+          <p>Pnone No. 0706 365 5056</p>
+          <Address>Gadonasko Rd Kubwa Abuja, Nigeria.</Address>
+        </div>
+        <div>
+          <h2 class="font-black pb-3">We are Social</h2>
+          <div class="">
+            <div class="social flex gap-x-3">
+              <div><img class="size-6 cursor-pointer" src="Images/fb-black.png" alt=""></div>
+              <div><img class="size-6 cursor-pointer" src="Images/instagram-Icon-color.jpeg" alt=""></div>
+              <div><img class="size-6 cursor-pointer" src="Images/twitter-icon.png" alt=""></div>
+              <div><img class="size-6 cursor-pointer" src="Images/whatsapp-icon.jpeg" alt=""></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center py-5"><small>The Website was Developed by Onu Emmanuel Chukwuma... &copy2025</small></div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <script src="Jscript/app.js"></script>
+
+
+</body>
+
+</html>
