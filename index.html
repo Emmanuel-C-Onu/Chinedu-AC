@@ -19,6 +19,7 @@
         <span class="text-white pl-[100vw]">Thank You! For Your Patronage</span>
       </marquee>
     </div>
+
     <div class="contact flex flex-col lg:flex-row justify-between items-center bg-gray-950">
       <div class="w-full lg:w-[90%] flex flex-col lg:flex-row justify-between items-center text-white mx-auto">
         <div class="name text-2xl font-bold py-2">Chinedu AC</div>
@@ -43,7 +44,8 @@
 
       </div>
     </div>
-    <div class="nav-container bg-gray-700">
+
+    <div class="nav-container top-0 left-0 w-full z-50 bg-gray-700">
       <nav class="text-white flex justify-between items-center py-3 lg:py-0 w-[95%] mx-auto">
         <div class="group flex justify-center items-center gap-x-24 font-medium">
           <div class="logo cursor-pointer flex justify-center items-center font-extrabold">
@@ -56,7 +58,7 @@
               <li class="py-3.5 px-3 bg-black"><a href="#home">Home</a></li>
               <li class="py-3.5 px-3 hover:bg-black"><a href="#About">About</a></li>
               <li class="py-3.5 px-3 hover:bg-black"><a href="#What-We-Do">What We Do</a></li>
-              <li class="py-3.5 px-3 hover:bg-black"><a href="#Services">Services</a></li>
+              <li class="py-3.5 px-3 hover:bg-black"><a href="services">Services</a></li>
               <li class="py-3.5 px-3 hover:bg-black"><a href="#Project">Project</a></li>
               <li class="py-3.5 px-3 hover:bg-black"><a href="#Blog">Blog</a></li>
             </ul>
@@ -78,36 +80,35 @@
 
       <div class="mobile-nav-links h-0 overflow-hidden transition-all duration-700 absolute z-50 w-full">
         <ul class="text-white bg-gray-600 font-bold">
-          <li class="py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#home">Home</a></li>
-          <li class="py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#About">About</a></li>
-          <li class="py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#What-We-Do">What We Do</a></li>
-          <li class="py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#Services">Services</a></li>
-          <li class="py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#Project">Project</a></li>
-          <li class="py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#Blog">Blog</a></li>
+          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#home">Home</a></li>
+          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#About">About</a></li>
+          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#What-We-Do">What We Do</a></li>
+          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#services">Services</a></li>
+          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#Project">Project</a></li>
+          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#Blog">Blog</a></li>
         </ul>
       </div>
 
     </div>
   </header>
 
-
-
-
-
-
   <main class="w-full overflow-x-hidden">
+    <section>
+  <div class="hidden back-to-top-container">
+    <div
+      class="fixed back-to-top grid place-items-center cursor-pointer z-30 bottom-14 right-1 rounded-full  bg-black border-2 border-white text-white size-8">
+      <span class="py-2 grid place-items-center">
+        <small class="text-center text-xs">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+          </svg>
+        </small>
+      </span>
+    </div>
+  </div>
+    </section>
 
-<div
-  class="fixed back-to-top grid place-items-center cursor-pointer z-5 bottom-14 right-1 rounded-full  bg-gradient-to-r from-cyan-600 to-red-700 border-2 border-white text-white size-10">
-  <span class="py-2 grid place-items-center">
-    <small class="text-center text-xs">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        class="size-4">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
-      </svg>
-    </small>
-  </span>
-</div>
     <section id="carousel-section" class="w-[100%] bg-white pb-5">
       <div id="default-carousel" class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
@@ -182,7 +183,6 @@
 
     </section>
 
-
     <section id="About" class="w-[100%] bg-white pb-5">
       <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-x-10 lg:gap-x-20 w-[90%] justify-between">
         <div class="image hover:scale-110 focus:scale-110 transition-all duration-700 mx-auto lg:mx-0"><img
@@ -209,7 +209,7 @@
       </div>
     </section>
 
-    <section id="Who-We-Are" class="w-[100%] bg-gray-50 pb-5">
+    <section id="#Who-We-Are" class="w-[100%] bg-gray-50 pb-5">
 
       <div class="who-we-are-container w-[90%] py-5 mx-auto">
         <div>
@@ -226,35 +226,15 @@
 
 
 
-        <div
-          class="what-we-do grid-container w-[90%] mx-auto grid place-items-center gap-x-10 lg:gap-x-36 grid-cols-2 md:grid-cols-3 gap-3 lg:gap-0 lg:grid-cols-4">
-          <div class="w-[17rem] grid place-items-center">
-            <img class="w-[10rem] lg:w-[17rem] h-[8] lg:h-[10rem]" src="Images/bg61.jpeg" alt="">
-            <h2 class="py-2 font-black text-center">AC Technicians</h2>
-           
-
-          </div>
-          <div class="w-[17rem] grid place-items-center">
-            <img class="w-[10rem] lg:w-[17rem] h-[8] lg:h-[10rem]" src="Images/bg10.jpeg" alt="">
-            <h2 class="py-2 font-black text-center">AC Workshop</h2>
-            
-          </div>
-          <div class="w-[17rem] grid place-items-center">
-            <img class="w-[10rem] lg:w-[17rem] h-[8] lg:h-[10rem]" src="Images/AC img3.jpeg" alt="">
-            <h2 class="py-2 font-black text-center">AC Diagnosis</h2>
-            
-          </div>
-          <div class="w-[17rem] grid place-items-center ">
-            <img class="w-[10rem] lg:w-[17rem] h-[8] lg:h-[10rem]" src="Images/AC img2.jpeg" alt="">
-            <h2 class="py-2 font-black text-center">AC Testing</h2>
-            
-
+        <div class="what-we-do grid-container w-[90%] 
+                            mx-auto grid place-items-center gap-x-10 lg:gap-x-36 grid-cols-2 
+                            md:grid-cols-3 gap-3 lg:gap-0 lg:grid-cols-4">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="spare-parts" class="w-[100%] bg-white pb-5">
+    <section id="services" class="w-[100%] bg-white pb-5">
 
       <div class="spare-parts-container w-[90%] py-5 mx-auto">
         <div>
@@ -273,26 +253,8 @@
 
         <div
           class="Other-services w-[90%] mx-auto grid place-items-center gap-x-10 lg:gap-x-36 grid-cols-2 md:grid-cols-3 gap-3 lg:gap-0 lg:grid-cols-4">
-          <div class="w-[17rem] grid place-items-center">
-            <img class="w-[10rem] lg:w-[17rem] h-[8] lg:h-[10rem]" src="Images/AC img12.jpeg" alt="">
-            <h2 class="py-2 font-black text-center">AC Shop</h2>
-            
 
-          </div>
-          <div class="w-[17rem] grid place-items-center">
-            <img class="w-[10rem] lg:w-[17rem] h-[8] lg:h-[10rem]" src="Images/AC img19.jpeg" alt="">
-            <h2 class="py-2 font-black text-center">AC Condenser</h2>
-            
-          </div>
-          <div class="w-[17rem] grid place-items-center">
-            <img class="w-[10rem] lg:w-[17rem] h-[8] lg:h-[10rem]" src="Images/AC img18.jpeg" alt="">
-            <h2 class="py-2 font-black text-center">AC Compressor</h2>
-           
-          </div>
-          <div class="w-[17rem] grid place-items-center">
-            <img class="w-[10rem] lg:w-[17rem] h-[8] lg:h-[10rem]" src="Images/gas-charging-valve.jpeg" alt="">
-            <h2 class="py-2 font-black text-center">AC Gas</h2>
-            
+          
 
           </div>
         </div>
@@ -461,7 +423,7 @@
         </details>
 
         <details class="bg-gray-200 py-3 px-3 cursor-pointer text-gray-950">
-          <summary>What Kind of AC Gas Dou You use</summary>
+          <summary>What Kind of AC Gas Do You use</summary>
           <p class="pl-4 pt-5">There are a lot of AC gas out there but we use the best quality gas for our AC work</p>
         </details>
 
@@ -477,7 +439,7 @@
       </div>
     </section>
 
-    <section class="blog w-full pb-5">
+    <section id="#Project" class="blog w-full pb-5">
       <div class="py-5">
         <h2 class="text-2xl font-black text-center py-2">Completed Projects</h2>
         <div class="w-[7rem] border-t-[0.18rem] pb-2 border-gray-950 mx-auto"></div>
@@ -491,27 +453,7 @@
 
       <div class="project-container">
         <div
-          class="what-we-do grid-container w-[90%] mx-auto grid place-items-center gap-x-10 lg:gap-x-36 grid-cols-2 md:grid-cols-3 gap-3 lg:gap-0 lg:grid-cols-4">
-          <div class="w-[17rem] grid place-items-center">
-            <img class="w-[10rem] lg:w-[17rem] h-[8] lg:h-[10rem]" src="Images/AC img2.jpeg" alt="">
-            <h2 class="py-2 font-black text-center">Work Completed</h2>
-
-          </div>
-          <div class="w-[17rem] grid place-items-center">
-            <img class="w-[10rem] lg:w-[17rem] h-[8] lg:h-[10rem]" src="Images/AC img1.jpeg" alt="">
-            <h2 class="py-2 font-black text-center">AC Testing</h2>
-
-          </div>
-          <div class="w-[17rem] grid place-items-center">
-            <img class="w-[10rem] lg:w-[17rem] h-[8] lg:h-[10rem]" src="Images/AC img9.jpeg" alt="">
-            <h2 class="py-2 font-black text-center">Kudos AC is Working</h2>
-
-          </div>
-          <div class="w-[17rem] grid place-items-center ">
-            <img class="w-[10rem] lg:w-[17rem] h-[8] lg:h-[10rem]" src="Images/bg1.jpeg" alt="">
-            <h2 class="py-2  font-black text-center">Customer is Leaving...</h2>
-
-          </div>
+          class="projects grid-container w-[90%] mx-auto grid place-items-center gap-x-10 lg:gap-x-36 grid-cols-2 md:grid-cols-3 gap-3 lg:gap-0 lg:grid-cols-4">         
         </div>
 
       </div>
@@ -579,6 +521,7 @@
       <div class="text-center py-5"><small>This website was developed by Onu Emmanuel Chukwuma... &copy2025</small></div>
     </div>
   </footer>
+  <script src="Data/product.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   <script src="Jscript/app.js"></script>
 
