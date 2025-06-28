@@ -4,18 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
   <link href="/css/output.css" rel="stylesheet">
-
-  <title>Document</title>
+  <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
+  <title>Auto Car AC Repairs</title>
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <div class="marquee grid bg-gradient-to-r from-green-950 via-[green] to-green-950">
       <marquee behavior="scroll" direction="left" scrollamount="1">
-        <span class="text-white">Welcome to Chinedu Auto AC Repair Solution Center...</span>
+        <span class="text-white">Welcome to our workshop, No 1 Auto AC Repair...</span>
         <span class="text-white pl-[100vw]">Thank You! For Your Patronage</span>
       </marquee>
     </div>
@@ -26,7 +28,7 @@
         <div class="address-conatiner flex justify-between w-full lg:w-fit gap-x-0 lg:gap-x-36 py-3 px-2 ">
           <div class="address">
             <p class="font-bold">Address</p>
-            <p>Gado Nasko Rd. Kubwa</p>
+            <p>Mechanic Village, Gauraka</p>
           </div>
           <div class="call-us">
             <p class="font-bold">Call Us</p>
@@ -49,18 +51,22 @@
       <nav class="text-white flex justify-between items-center py-3 lg:py-0 w-[95%] mx-auto">
         <div class="group flex justify-center items-center gap-x-24 font-medium">
           <div class="logo cursor-pointer flex justify-center items-center font-extrabold">
-            <img class="size-9" src="Images/logo1.png" alt="">
-            <small>CAR-AC</small>
+            <!-- <img class="size-9" src="Images/logo1.png" alt=""> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1" stroke="whitesmoke" class="size-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+            </svg>
+            
+            <small class="font-mono">CAR-AC</small>
           </div>
 
           <div class="hidden lg:block">
             <ul class="flex ">
               <li class="py-3.5 px-3 bg-black"><a href="#home">Home</a></li>
-              <li class="py-3.5 px-3 hover:bg-black"><a href="#About">About</a></li>
-              <li class="py-3.5 px-3 hover:bg-black"><a href="#What-We-Do">What We Do</a></li>
-              <li class="py-3.5 px-3 hover:bg-black"><a href="services">Services</a></li>
-              <li class="py-3.5 px-3 hover:bg-black"><a href="#Project">Project</a></li>
-              <li class="py-3.5 px-3 hover:bg-black"><a href="#Blog">Blog</a></li>
+              <li class="py-3.5 px-3 hover:bg-black"><a href="#about">About</a></li>
+              <li class="py-3.5 px-3 hover:bg-black"><a href="#aboutUs">What We Do</a></li>
+              <li class="py-3.5 px-3 hover:bg-black"><a href="#services">Services</a></li>
+              <li class="py-3.5 px-3 hover:bg-black"><a href="#project">Project</a></li>
+              <li class="py-3.5 px-3 hover:bg-black"><a href="#blog">Blog</a></li>
             </ul>
           </div>
         </div>
@@ -81,11 +87,11 @@
       <div class="mobile-nav-links h-0 overflow-hidden transition-all duration-700 absolute z-50 w-full">
         <ul class="text-white bg-gray-600 font-bold">
           <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#home">Home</a></li>
-          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#About">About</a></li>
-          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#What-We-Do">What We Do</a></li>
+          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#about">About</a></li>
+          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#aboutUs">What We Do</a></li>
           <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#services">Services</a></li>
-          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#Project">Project</a></li>
-          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#Blog">Blog</a></li>
+          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#project">Project</a></li>
+          <li class="li-nav-link py-3.5 w-full hover:bg-gray-700"><a class="px-9" href="#blog">Blog</a></li>
         </ul>
       </div>
 
@@ -94,103 +100,60 @@
 
   <main class="w-full overflow-x-hidden">
     <section>
-  <div class="hidden back-to-top-container">
-    <div
-      class="fixed back-to-top grid place-items-center cursor-pointer z-30 bottom-14 right-1 rounded-full  bg-black border-2 border-white text-white size-8">
-      <span class="py-2 grid place-items-center">
-        <small class="text-center text-xs">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="size-4">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
-          </svg>
-        </small>
-      </span>
-    </div>
-  </div>
+      <div class="hidden back-to-top-container">
+        <div
+          class="fixed back-to-top grid place-items-center cursor-pointer z-30 bottom-14 right-1 rounded-full  bg-black border-2 border-white text-white size-8">
+          <span class="py-2 grid place-items-center">
+            <small class="text-center text-xs">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+              </svg>
+            </small>
+          </span>
+        </div>
+      </div>
     </section>
 
-    <section id="carousel-section" class="w-[100%] bg-white pb-5">
-      <div id="default-carousel" class="relative w-full" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden  md:h-96 lg:h-[76vh]">
-          <!-- Item 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="Images/bg3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="...">
-          </div>
-          <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="Images/bg2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="...">
-          </div>
-          <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="Images/bg3.jpg" class="absolute block w-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="...">
-          </div>
-          <!-- Item 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="Images/bg2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="...">
-          </div>
-          <!-- Item 5 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="Images/bg3.jpg" class="absolute block w-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="...">
-          </div>
+
+
+    <section id="carousel-section" class="carousel-section mb-4">
+      <div id="splide" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img class="w-full h-auto" src="./Images/bg3.jpg" alt="image-1">
+            </li>
+
+            <li class="splide__slide">
+              <img class="w-full h-auto" src="./Images/bg2.jpg" alt=" image-2">
+            </li>
+
+            <li class="splide__slide">
+              <img class="w-full h-auto" src="./Images/bg6.webp" alt="image-3">
+            </li>
+
+          </ul>
         </div>
-        <!-- Slider indicators -->
-        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-            data-carousel-slide-to="0"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-            data-carousel-slide-to="1"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-            data-carousel-slide-to="2"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-            data-carousel-slide-to="3"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-            data-carousel-slide-to="4"></button>
-        </div>
-        <!-- Slider controls -->
-        <button type="button"
-          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev>
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M5 1 1 5l4 4" />
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button type="button"
-          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next>
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="m1 9 4-4-4-4" />
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
       </div>
 
     </section>
 
-    <section id="About" class="w-[100%] bg-white pb-5">
-      <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-x-10 lg:gap-x-20 w-[90%] justify-between">
-        <div class="image hover:scale-110 focus:scale-110 transition-all duration-700 mx-auto lg:mx-0"><img
-            src="Images/bg1.jpg" alt=""></div>
-        <div class="about-us-text *:pb-3">
-          <h2 class=" text-orange-600 pt-14 lg:pt-0 lg:text-start text-center text-xl">Welcome to Chinedu Auto AC Shop
+
+
+
+
+    <section class="w-[100%] bg-white">
+      <div class="flex flex-col lg:flex-row mx-auto w-[98%] justify-between">
+
+        <div class="image mx-auto mt-1.5 lg:mx-0 w-[100%]">
+          <img loading="lazy" src="Images/bg1.jpg" alt="">
+        </div>
+
+        <div class="w-[100%] about-us-text px-1 *:pb-4 mr-5">
+          <h2 class="font-black lg:text-justify text-center text-xl">Welcome to Chinedu Auto AC Shop
           </h2>
-          <p class="text-3xl text-[#5A6F84] grid place-items-center lg:place-items-start">About</p>
+          <p class="text-3xl font-semibold grid place-items-center lg:place-items-start">About</p>
           <p class="text-justify py-1">
             Chinedu Auto AC specialise in fixing car air-condition for all models of cars. We have highly skilled
             technicians who
@@ -209,7 +172,7 @@
       </div>
     </section>
 
-    <section id="#Who-We-Are" class="w-[100%] bg-gray-50 pb-5">
+    <section id="aboutUs" class="w-[100%] bg-gray-50 pb-5">
 
       <div class="who-we-are-container w-[90%] py-5 mx-auto">
         <div>
@@ -229,8 +192,8 @@
         <div class="what-we-do grid-container w-[90%] 
                             mx-auto grid place-items-center gap-x-10 lg:gap-x-36 grid-cols-2 
                             md:grid-cols-3 gap-3 lg:gap-0 lg:grid-cols-4">
-          </div>
         </div>
+      </div>
       </div>
     </section>
 
@@ -254,37 +217,36 @@
         <div
           class="Other-services w-[90%] mx-auto grid place-items-center gap-x-10 lg:gap-x-36 grid-cols-2 md:grid-cols-3 gap-3 lg:gap-0 lg:grid-cols-4">
 
-          
-
-          </div>
         </div>
+      </div>
       </div>
     </section>
 
-    <section class="experience w-full bg-black pb-5">
-      <div class="grid w-full grid-cols-1 lg:grid-cols-4 place-items-center bg-black text-white *:py-5 *:text-center">
+    <section id="blog" class="experience w-full bg-black pb-5">
+      <div
+        class="in-view grid w-full grid-cols-1 lg:grid-cols-4 place-items-center bg-black text-white *:py-5 *:text-center">
         <div>
-          <p class="text-3xl text-orange-500">25</p>
+          <p class="yearsOfExperience text-3xl text-orange-500">0</p>
           <h2>Years of Experience</h2>
 
         </div>
         <div>
-          <p class="text-3xl text-orange-500">4000</p>
+          <p class="projectCompleted text-3xl text-orange-500">0</p>
           <h2>Project Completed</h2>
         </div>
         <div>
-          <p class="text-3xl text-orange-500">2321</p>
+          <p class="happyCustomers text-3xl text-orange-500">0</p>
           <h2>Happy Customers</h2>
         </div>
         <div>
-          <p class="text-3xl text-orange-500">30</p>
+          <p class="awardWinning text-3xl text-orange-500">0</p>
           <h2>Award Winning</h2>
         </div>
       </div>
 
     </section>
 
-    <section class="appointment pb-5">
+    <section class="appointment pb-5 bg-[#E5E7EB]">
       <div class="py-5">
         <h2 class="text-2xl font-black text-center py-2">Book An Appointment</h2>
         <div class="w-[7rem] border-t-[0.18rem] pb-2 border-gray-950 mx-auto"></div>
@@ -297,9 +259,9 @@
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 w-full *:text-center">
-        <div class="bg-gray-600 pb-3">
-          <h2 class="text-white py-2 text-3xl font-black">Common AC Problems</h2>
-          <ul class="text-white list-disc text-xl text-justify pl-[17%] lg:pl-[30%] leading-normal lg:leading-10">
+        <div class="pb-3">
+          <h2 class="py-2 text-3xl font-black">Common AC Problems</h2>
+          <ul class=" list-disc text-xl text-justify pl-[17%] lg:pl-[30%] leading-normal lg:leading-10">
             <li>Weak Airflow</li>
             <li>Warm Air instead of Cold</li>
             <li>Strange Noises</li>
@@ -315,8 +277,9 @@
 
         </div>
 
-        <div class="form bg-orange-500 w-full">
-          <h2 class="text-3xl py-2 text-white font-black">Free Consultaion</h2>
+       <div class="form-container w-full">
+        <div class="form w-4/5">
+          <h2 class="text-3xl text-center py-2 font-black">Free Consultaion</h2>
           <form>
             <div class="form-group pb-5 w-[95%] mx-auto">
               <select name="issues" id="issues" class="py-2 px-2 w-full outline-none rounded">
@@ -327,63 +290,59 @@
                 <option value="ac">Electrical Repair</option>
               </select>
             </div>
-
-
+        
+        
             <div class="form-group pb-5 w-[95%] mx-auto">
               <div class="grid grid-cols-2 gap-x-3 w-full">
-                <input type="text" name="name" id="name" class="py-2 px-2 w-full outline-none rounded"
-                  placeholder="Name">
+                <input type="text" name="name" id="name" class="py-2 px-2 w-full outline-none rounded" placeholder="Name">
                 <input type="text" name="engineNo" id="engineNo" class="py-2 px-2 w-full outline-none rounded"
                   placeholder="Engine No.">
               </div>
             </div>
-
-
+        
+        
             <div class="form-group pb-5 w-[95%] mx-auto">
               <div class="grid grid-cols-2 gap-x-3 w-full">
-            <select name="issues" id="issues" class="py-2 px-2 outline-none rounded">
-              <option hidden value="">Select Day</option>
-              <option value="ac">Monday</option>
-              <option value="ac">Tuesday</option>
-              <option value="ac">Wednessday</option>
-              <option value="ac">Thursday</option>
-              <option value="ac">Friday</option>
-              <option value="ac">Saturday</option>
-            </select>
-            
-            <select name="issues" id="issues" class="py-2 px-2  outline-none rounded">
-              <option hidden value="">Select Time</option>
-              <option value="ac">9am</option>
-              <option value="ac">10am</option>
-              <option value="ac">11am</option>
-              <option value="ac">12pm</option>
-              <option value="ac">1pm</option>
-              <option value="ac">2pm</option>
-              <option value="ac">3pm</option>
-              <option value="ac">4pm</option>
-              <option value="ac">5pm</option>
-              <option value="ac">6pm</option>
-              <option value="ac">7pm</option>
-              <option value="ac">8pm</option>
-              <option value="ac">9pm</option>
-            </select>
-
+                <select name="issues" id="issues" class="py-2 px-2 outline-none rounded">
+                  <option hidden value="">Select Day</option>
+                  <option value="ac">Monday</option>
+                  <option value="ac">Tuesday</option>
+                  <option value="ac">Wednessday</option>
+                  <option value="ac">Thursday</option>
+                  <option value="ac">Friday</option>
+                  <option value="ac">Saturday</option>
+                </select>
+        
+                <select name="issues" id="issues" class="py-2 px-2  outline-none rounded">
+                  <option hidden value="">Select Time</option>
+                  <option value="ac">9am</option>
+                  <option value="ac">10am</option>
+                  <option value="ac">11am</option>
+                  <option value="ac">12pm</option>
+                  <option value="ac">1pm</option>
+                  <option value="ac">2pm</option>
+                  <option value="ac">3pm</option>
+                  <option value="ac">4pm</option>
+                </select>
+        
               </div>
-            
+        
             </div>
-
+        
             <div class="form-group w-[95%] mx-auto">
               <textarea name="text" id="text" rows="7" placeholder="Description of the issues"
                 class="w-full rounded outline-none px-2"></textarea>
             </div>
-
+        
             <div class="form-group  w-[95%] mx-auto py-4">
-              <button class="py-2 px-2 w-full outline-none rounded bg-orange-950 text-white">Submit</button>
+              <button
+                class="py-2 px-2 w-full outline-none border-none transition-all duration-[50ms]  rounded hover:border-black hover:border-solid hover:border-2 bg-white">Submit</button>
             </div>
-
-
+        
+        
           </form>
         </div>
+       </div>
       </div>
 
     </section>
@@ -439,7 +398,7 @@
       </div>
     </section>
 
-    <section id="#Project" class="blog w-full pb-5">
+    <section id="project" class="blog w-full pb-5">
       <div class="py-5">
         <h2 class="text-2xl font-black text-center py-2">Completed Projects</h2>
         <div class="w-[7rem] border-t-[0.18rem] pb-2 border-gray-950 mx-auto"></div>
@@ -453,7 +412,7 @@
 
       <div class="project-container">
         <div
-          class="projects grid-container w-[90%] mx-auto grid place-items-center gap-x-10 lg:gap-x-36 grid-cols-2 md:grid-cols-3 gap-3 lg:gap-0 lg:grid-cols-4">         
+          class="projects grid-container w-[90%] mx-auto grid place-items-center gap-x-10 lg:gap-x-36 grid-cols-2 md:grid-cols-3 gap-3 lg:gap-0 lg:grid-cols-4">
         </div>
 
       </div>
@@ -495,7 +454,7 @@
             <li>Mon 09:00 - 08:00 </li>
             <li>Tue 09:00 - 08:00</li>
             <li>Wed 09:00 - 08:00 </li>
-            <li>Thu 09:00 - 08:00 </li> 
+            <li>Thu 09:00 - 08:00 </li>
             <li>Fri 09:00 - 08:00 </li>
             <li>Sat 09:00 - 08:00 </li>
           </ul>
@@ -503,7 +462,7 @@
         <div>
           <h2 class="font-black pb-3">Contact information</h2>
           <p>Pnone No. 0706 365 5056</p>
-          <Address>Gado nasko Rd Kubwa Abuja, Nigeria.</Address>
+          <Address>Mechanic Village, Gauraka. Kaduna Road</Address>
         </div>
         <div>
           <h2 class="font-black pb-3">We are Social</h2>
@@ -518,9 +477,11 @@
         </div>
 
       </div>
-      <div class="text-center py-5"><small>This website was developed by Onu Emmanuel Chukwuma... &copy2025</small></div>
+      <div class="text-center py-5"><small>This website was developed by Onu Emmanuel Chukwuma... &copy2025</small>
+      </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   <script src="Data/product.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   <script src="Jscript/app.js"></script>
